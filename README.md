@@ -1,2 +1,56 @@
 # AegisCam
 A camera project geared towards improving the overall experience on older hardware, with imrpoved auto modes, HDR+, and modern features. Currently geared towards Xperia devices, with more support planned with later builds.
+
+Currently built and tested on the **Sony Xperia 5 II**, with its own photo processing: multi-frame HDR+ and
+Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p / 720p video.
+
+> **Beta.** Aegis is in public beta: expect bugs, and back up photos and videos that matter.
+> This repository holds the app's releases and bug reports only; the source code is not public.
+
+## Download
+
+**[Latest release →](https://github.com/Unagi-sann/AegisCam-releases/releases)**
+
+Every release has `AegisCamera.apk` and its SHA-256 checksum (`AegisCamera.apk.sha256`).
+
+## Install
+
+1. On the phone, open the latest release and download **AegisCamera.apk**.
+2. Open the downloaded file. The first time, Android asks to allow installs from your browser or
+   file manager: allow it, go back, and open the file again.
+3. Open **Aegis Camera** and allow the camera (and microphone, for video sound).
+
+**Updating:** install the new APK over the old one: your settings are kept. Aegis tells you when a
+new version is out (Settings ▸ Misc. ▸ About & support ▸ Check for updates; you can turn it off).
+
+**Checking the download (optional):** on a computer, `sha256sum AegisCamera.apk` should print the
+value in `AegisCamera.apk.sha256` and the release notes.
+
+## Phones
+
+| Phone | Status |
+| --- | --- |
+| Sony Xperia 5 II (XQ-AS42, XQ-AS52, XQ-AS62, XQ-AS72, SO-52A, SOG02, A002SO) | Tested |
+| Other Android phones (Android 11 or newer) | Untested: may install, but lenses or modes may not work |
+
+Have another phone? You can help add support: in Aegis, open **Settings ▸ Misc. ▸ Export camera
+capabilities**, then open a **[Support for my phone](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)**
+request and attach the zip.
+
+## Report a problem
+
+In Aegis: **Settings ▸ Misc. ▸ Report a problem**. It saves a diagnostics zip in
+Documents/AegisCamera and opens the bug report form here: attach the zip and describe what
+happened.
+
+Or open a **[bug report](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)** directly.
+Please check the open issues first.
+
+## Legal
+
+- [Beta licence (EULA)](LICENSE.md): free to use; don't re-upload or modify the app.
+- [Privacy](PRIVACY.md): Aegis collects nothing.
+- [Third-party notices](THIRD-PARTY-NOTICES.md): open-source components in the app.
+
+Aegis Camera is an independent app, not affiliated with Sony. Sony and Xperia are trademarks of
+Sony Group Corporation.
