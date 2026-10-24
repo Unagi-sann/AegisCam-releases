@@ -68,7 +68,9 @@ Please check the open issues first.
 3. Run these commands (one time only) -
 
 adb shell pm grant com.vista.camera android.permission.READ_LOGS
+
 adb shell pm grant com.vista.camera android.permission.DUMP
+
 adb shell am force-stop com.vista.camera
 
 After this, Aegis will be able to save logcat files along with the already included diagnostics. This gives us a better understanding of camera functionality for your specific device. 
