@@ -1,0 +1,47 @@
+name: Support for my phone
+description: Ask for Aegis to support another phone, with its camera details.
+title: "[Phone] "
+labels: ["phone support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Aegis is tuned on the Xperia 5 II. To help add your phone: in Aegis, open
+        **Settings ▸ Misc. ▸ Export camera capabilities** (it runs a short lens test, then saves a zip in
+        Documents/AegisCamera) and attach the zip below. Requests and attachments here are **public**.
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      description: As shown in Settings ▸ Misc. ▸ About & support, or the phone's Settings ▸ About phone
+      placeholder: "Xperia 1 III XQ-BC52"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version and build number
+      placeholder: "Android 13, 61.2.A.0.472"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Aegis version
+      placeholder: "1.1-beta3 (102)"
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Camera capabilities zip
+      description: Drag the capabilities_<model>_<time>.zip file here (up to 25 MB).
+    validations:
+      required: true
+  - type: textarea
+    id: works
+    attributes:
+      label: What works and what doesn't
+      description: For example which lenses show up, whether photos and videos save, any crashes.
+    validations:
+      required: false
