@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download Aegis Camera
+    url: https://github.com/Unagi-sann/AegisCam-releases/releases
+    about: The latest release and install steps.
