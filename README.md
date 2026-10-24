@@ -61,6 +61,18 @@ happened.
 Or open a **[bug report](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)** directly.
 Please check the open issues first.
 
+## Commands for full logcat directly from the app (optional)
+
+1. Install adb and fastboot tools on your PC depending on your OS.
+2. Connect your device with adb.
+3. Run these commands (one time only) -
+
+adb shell pm grant com.vista.camera android.permission.READ_LOGS
+adb shell pm grant com.vista.camera android.permission.DUMP
+adb shell am force-stop com.vista.camera
+
+After this, Aegis will be able to save logcat files along with the already included diagnostics. This gives us a better understanding of camera functionality for your specific device. 
+
 ## Legal
 
 - [Beta licence (EULA)](LICENSE.md): free to use; don't re-upload or modify the app.
