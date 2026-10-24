@@ -1,5 +1,5 @@
 # AegisCam
-A camera project geared towards improving the overall experience on older hardware, with imrpoved auto modes, HDR+, and modern features. Currently geared towards Xperia devices, with more support planned with later builds.
+A camera project geared towards improving the overall experience on older hardware, with improved auto modes, HDR+, and modern features. Currently geared towards Xperia devices, with more support planned with later builds.
 
 Currently built and tested on the **Sony Xperia 5 II**, with its own photo processing: multi-frame HDR+ and
 Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p / 720p video.
