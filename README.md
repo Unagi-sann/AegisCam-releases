@@ -13,6 +13,17 @@ Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p
 
 Every release has `AegisCamera.apk` and its SHA-256 checksum (`AegisCamera.apk.sha256`).
 
+## Notable features
+
+1. Faster auto mode, with HDR+ support (Aegis Experimental)
+2. 4k60fps video working on the 5ii with portrait mode
+3. Option to turn on level and grids
+4. HDR+ based on Google's public documentation
+5. Custom bitrates for video modes
+6. Easy diagnostics export for debugging and support
+7. GPU merge for HDR+, with improvements planned
+8. Filters for pictures with strength sliders
+
 ## Install
 
 1. On the phone, open the latest release and download **AegisCamera.apk**.
