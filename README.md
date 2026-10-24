@@ -46,11 +46,14 @@ value in `AegisCamera.apk.sha256` and the release notes.
 | Phone | Status |
 | --- | --- |
 | Sony Xperia 5 II (XQ-AS42, XQ-AS52, XQ-AS62, XQ-AS72, SO-52A, SOG02, A002SO) | Tested |
+| Sony Xperia 1 II (XQ-AT51, XQ-AT52 and other regions) | Being added: lenses fixed in 1.1-beta4, testing with a tester |
+| Sony Xperia 1 V (XQ-DQ54 and other regions) | Being added: lens zoom and RAW fixes in 1.1-beta4, testing with a tester |
+| Google Pixel 10 Pro XL | Being added: lens buttons fixed in 1.1-beta4, testing with a tester |
 | Other Android phones (Android 11 or newer) | Untested: may install, but lenses or modes may not work |
 
 Have another phone? You can help add support: in Aegis, open **Settings ▸ Misc. ▸ Export camera
 capabilities**, then open a **[Support for my phone](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)**
-request and attach the zip.
+request and attach the zip. More ways to help, with every step: **[ADD-A-PHONE.md](ADD-A-PHONE.md)**.
 
 ## Report a problem
 
