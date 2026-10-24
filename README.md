@@ -7,7 +7,7 @@ Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p
 > **Beta.** Aegis is in public beta: expect bugs, and back up photos and videos that matter.
 > This repository holds the app's releases and bug reports only; the source code is not public.
 
-# Full Disclosure: AI tools have been used while building this app.
+Full Disclosure: AI tools have been used while building this app.
 
 ## Download
 
