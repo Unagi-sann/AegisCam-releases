@@ -1,0 +1,71 @@
+name: Bug report
+description: Something doesn't work, crashes, or looks wrong.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Aegis! The quickest way: in Aegis, **Settings ▸ Misc. ▸ Report a problem**,
+        then attach the zip it saves in Documents/AegisCamera (drag it into the box below).
+        Reports and attachments here are **public**.
+  - type: input
+    id: version
+    attributes:
+      label: Aegis version
+      description: Settings ▸ Misc. ▸ About & support
+      placeholder: "1.1-beta3 (102)"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and Android version
+      placeholder: "Xperia 5 II XQ-AS72, Android 12"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      multiple: true
+      options:
+        - Photo
+        - Photo (Aegis Experimental on)
+        - Pro Photo
+        - Video
+        - Pro Video
+        - Slow-mo
+        - Settings / other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Opened Photo mode with flash on
+        2. Pressed the shutter
+        3. The photo was black
+    validations:
+      required: true
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Once
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Diagnostics zip, photos or screen recordings
+      description: |
+        Export diagnostics right after the problem happens (Settings ▸ Misc. ▸ Export diagnostics, or Report a problem)
+        and drag the zip here. Files can be up to 25 MB.
+    validations:
+      required: false
