@@ -1,32 +1,16 @@
-# AegisCam
-A camera project geared towards improving the overall experience on older hardware, with improved auto modes, HDR+, and modern features. Currently geared towards Xperia devices, with more support planned with later builds.
+# Aegis Camera
 
-Currently built and tested on the **Sony Xperia 5 II**, with its own photo processing: multi-frame HDR+ and
+A camera app for the **Sony Xperia 5 II**, with its own photo processing: multi-frame HDR+ and
 Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p / 720p video.
 
 > **Beta.** Aegis is in public beta: expect bugs, and back up photos and videos that matter.
 > This repository holds the app's releases and bug reports only; the source code is not public.
-
-Full Disclosure: AI tools have been used while building this app.
 
 ## Download
 
 **[Latest release →](https://github.com/Unagi-sann/AegisCam-releases/releases)**
 
 Every release has `AegisCamera.apk` and its SHA-256 checksum (`AegisCamera.apk.sha256`).
-
-## Notable features
-
-1. Faster auto mode, with HDR+ support (Aegis Experimental)
-2. 4k60fps video working on the 5ii with portrait mode
-3. Option to turn on level and grids
-4. Working camera button, same as photo pro. Also works in video mode.
-5. Seamless lens switching
-6. HDR+ based on Google's public documentation
-7. Custom bitrates for video modes
-8. Easy diagnostics export for debugging and support
-9. GPU merge for HDR+, with improvements planned
-10. Filters for pictures with strength sliders
 
 ## Install
 
@@ -49,7 +33,15 @@ value in `AegisCamera.apk.sha256` and the release notes.
 | Sony Xperia 1 II (XQ-AT51, XQ-AT52 and other regions) | Being added: lenses fixed in 1.1-beta4, testing with a tester |
 | Sony Xperia 1 V (XQ-DQ54 and other regions) | Being added: lens zoom and RAW fixes in 1.1-beta4, testing with a tester |
 | Google Pixel 10 Pro XL | Being added: lens buttons fixed in 1.1-beta4, testing with a tester |
-| Other Android phones (Android 11 or newer) | Untested: may install, but lenses or modes may not work |
+| OnePlus 12 (CPH2573 and other regions) | Being added: ultra wide and main only (OnePlus keeps the telephoto for allow-listed apps) |
+| Sony Xperia 1 III (XQ-BC72, SOG03 and other regions) | Being added: lens fix (depth sensor) in 1.1-beta4; 105 mm telephoto position in 1.1-beta15; not tested on the phone yet |
+| Sony Xperia 5 III (XQ-BQ42 and other regions) | Not tested yet: same 70 / 105 mm telephoto as the 1 III (105 mm from 1.1-beta15, if the phone reports it) |
+| Sony Xperia 1 IV (SO-51C, XQ-CT54 and other regions) | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–125 mm) |
+| Sony Xperia 1 VI (XQ-EC44 and other regions) | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–170 mm) |
+| Sony Xperia 5 IV (XQ-CQ72 and other regions) | Not tested yet: ultra wide, main and a fixed 60 mm telephoto |
+| Sony Xperia 5 V (XQ-DE72 and other regions) | Not tested yet: ultra wide and main only (no telephoto; 2× is a crop of the main) |
+| Sony Xperia 1 (J9110 and other regions) | Not tested yet: 2019 camera software (Android 11 at most), so lens switching may differ; the ultra wide has fixed focus |
+| Other Android phones (Android 10 or newer) | Untested: may install, but lenses or modes may not work |
 
 Have another phone? You can help add support: in Aegis, open **Settings ▸ Misc. ▸ Export camera
 capabilities**, then open a **[Support for my phone](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)**
@@ -63,20 +55,6 @@ happened.
 
 Or open a **[bug report](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)** directly.
 Please check the open issues first.
-
-## Commands for full logcat directly from the app (optional)
-
-1. Install adb and fastboot tools on your PC depending on your OS.
-2. Connect your device with adb.
-3. Run these commands (one time only) -
-
-adb shell pm grant com.vista.camera android.permission.READ_LOGS
-
-adb shell pm grant com.vista.camera android.permission.DUMP
-
-adb shell am force-stop com.vista.camera
-
-After this, Aegis will be able to save logcat files along with the already included diagnostics. This gives us a better understanding of camera functionality for your specific device. 
 
 ## Legal
 
