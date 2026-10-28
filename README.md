@@ -1,6 +1,6 @@
 # Aegis Camera
 
-A camera app for the **Sony Xperia 5 II**, with its own photo processing: multi-frame HDR+ and
+A camera app for **Xperia devices**, with its own photo processing: multi-frame HDR+ and
 Super-res merges, photo styles, Pro Photo and Pro Video controls, and 4K / 1080p / 720p video.
 
 > **Beta.** Aegis is in public beta: expect bugs, and back up photos and videos that matter.
