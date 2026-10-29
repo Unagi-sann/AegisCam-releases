@@ -39,21 +39,25 @@ value in `AegisCamera.apk.sha256` and the release notes.
 
 ## Phones
 
-| Phone | Status |
-| --- | --- |
-| Sony Xperia 5 II (XQ-AS42, XQ-AS52, XQ-AS62, XQ-AS72, SO-52A, SOG02, A002SO) | Tested |
-| Sony Xperia 1 II (XQ-AT51, XQ-AT52 and other regions) | Being added: lenses fixed in 1.1-beta4, testing with a tester |
-| Sony Xperia 1 V (XQ-DQ54 and other regions) | Being added: lens zoom and RAW fixes in 1.1-beta4, testing with a tester |
-| Google Pixel 10 Pro XL | Being added: lens buttons fixed in 1.1-beta4, testing with a tester |
-| OnePlus 12 (CPH2573 and other regions) | Being added: ultra wide and main only (OnePlus keeps the telephoto for allow-listed apps) |
-| Sony Xperia 1 III (XQ-BC72, SOG03 and other regions) | Being added: lens fix (depth sensor) in 1.1-beta4; 105 mm telephoto position in 1.1-beta15; not tested on the phone yet |
-| Sony Xperia 5 III (XQ-BQ42 and other regions) | Not tested yet: same 70 / 105 mm telephoto as the 1 III (105 mm from 1.1-beta15, if the phone reports it) |
-| Sony Xperia 1 IV (SO-51C, XQ-CT54 and other regions) | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–125 mm) |
-| Sony Xperia 1 VI (XQ-EC44 and other regions) | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–170 mm) |
-| Sony Xperia 5 IV (XQ-CQ72 and other regions) | Not tested yet: ultra wide, main and a fixed 60 mm telephoto |
-| Sony Xperia 5 V (XQ-DE72 and other regions) | Not tested yet: ultra wide and main only (no telephoto; 2× is a crop of the main) |
-| Sony Xperia 1 (J9110 and other regions) | Not tested yet: 2019 camera software (Android 11 at most), so lens switching may differ; the ultra wide has fixed focus |
-| Other Android phones (Android 10 or newer) | Untested: may install, but lenses or modes may not work |
+| Phone | Support level | Status |
+| --- | --- | --- |
+| Sony Xperia 5 II (XQ-AS42, XQ-AS52, XQ-AS62, XQ-AS72, SO-52A, SOG02, A002SO) | ~95% | Tested: every mode and lens; HDR+ photos still take about 4 s to finish |
+| Sony Xperia 1 II (XQ-AT51, XQ-AT52 and other regions) | ~70% | Being added: lenses fixed in 1.1-beta4, testing with a tester |
+| Sony Xperia 1 V (XQ-DQ54 and other regions) | ~70% | Being added: lenses and zoom work; RAW in Pro Photo still fails (retry fix in 1.1-beta12, testing with a tester) |
+| Google Pixel 10 Pro XL | ~55% | Being added: lens buttons fixed in 1.1-beta4; the ultra wide doesn't work yet, testing with a tester |
+| OnePlus 12 (CPH2573 and other regions) | ~50% | Being added: ultra wide and main only (OnePlus keeps the telephoto for allow-listed apps) |
+| Sony Xperia 1 III (XQ-BC72, SOG03 and other regions) | ~55% | Being added: lens fix (depth sensor) in 1.1-beta4; 105 mm telephoto position in 1.1-beta15; not tested on the phone yet |
+| Sony Xperia 5 III (XQ-BQ42 and other regions) | ~45% | Not tested yet: same 70 / 105 mm telephoto as the 1 III (105 mm from 1.1-beta15, if the phone reports it) |
+| Sony Xperia 1 IV (SO-51C, XQ-CT54 and other regions) | ~50% | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–125 mm) |
+| Sony Xperia 1 VI (XQ-EC44 and other regions) | ~45% | Not tested yet: same camera layout as the 1 V, telephoto zooms optically (85–170 mm) |
+| Sony Xperia 5 IV (XQ-CQ72 and other regions) | ~50% | Not tested yet: ultra wide, main and a fixed 60 mm telephoto |
+| Sony Xperia 5 V (XQ-DE72 and other regions) | ~50% | Not tested yet: ultra wide and main only (no telephoto; 2× is a crop of the main) |
+| Sony Xperia 1 (J9110 and other regions) | ~25% | Not tested yet: 2019 camera software (Android 11 at most), so lens switching may differ; the ultra wide has fixed focus |
+| Other Android phones (Android 10 or newer) | ~10–30% | Untested: may install, but lenses or modes may not work |
+
+**Support** is a rough estimate of how much of Aegis works on that phone: every mode, every lens, RAW,
+HDR+ (Aegis Experimental) and video. Tested in use counts most; "not tested yet" phones are a guess from
+their camera layout and similar phones, and will move up (or down) once someone tries them.
 
 Have another phone? You can help add support: in Aegis, open **Settings ▸ Misc. ▸ Export camera
 capabilities**, then open a **[Support for my phone](https://github.com/Unagi-sann/AegisCam-releases/issues/new/choose)**
