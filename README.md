@@ -15,13 +15,15 @@ Every release has `AegisCamera.apk` and its SHA-256 checksum (`AegisCamera.apk.s
 ## Notable Features
 
 1. Faster auto mode, with HDR+ support (Aegis Experimental)
-2. 4k60fps video working with portrait mode
+2. 4k60fps video working with portrait mode, Seamless Lens switching while video recording - Tested at 4k 30fps, 1080p 60fps on the 5ii
 3. Option to turn on level and grids
 4. HDR+ based on Google's public documentation
 5. Custom bitrates for video modes
 6. Easy diagnostics export for debugging and support
 7. GPU merge for HDR+, with improvements planned
 8. Filters for pictures with strength sliders
+9. Night Mode
+10. Metering Modes, Autofocus Areas, Peaking, Zebra pattern, Histogram (for pro modes)
 
 
 ## Install
@@ -36,6 +38,22 @@ new version is out (Settings ▸ Misc. ▸ About & support ▸ Check for updates
 
 **Checking the download (optional):** on a computer, `sha256sum AegisCamera.apk` should print the
 value in `AegisCamera.apk.sha256` and the release notes.
+
+## Fuller logs in Aegis's exports (optional)
+
+By default an export holds only Aegis's own log. Run these once, then close and reopen Aegis:
+
+```
+adb shell pm grant com.vista.camera android.permission.READ_LOGS
+adb shell pm grant com.vista.camera android.permission.DUMP
+adb shell am force-stop com.vista.camera
+```
+
+Aegis then shows *Full system log and camera dump: included* (Settings ▸ Misc. ▸ Diagnostics),
+and every export adds the camera service's log and state. Repeat step 1 after this.
+
+These logs can mention other apps on your phone; look through a zip before attaching it if
+unsure. Uninstalling Aegis removes the permissions.
 
 ## Phones
 
