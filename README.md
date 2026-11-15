@@ -18,14 +18,15 @@ Every release has `AegisCamera.apk` and its SHA-256 checksum (`AegisCamera.apk.s
 
 1. Faster auto mode, with HDR+ support (Aegis Experimental)
 2. 4k60fps video working with portrait mode, Seamless Lens switching while video recording - Tested at 4k 30fps, 1080p 60fps on the 5ii
-3. Option to turn on level and grids
-4. HDR+ based on Google's public documentation
-5. Custom bitrates for video modes
-6. Easy diagnostics export for debugging and support
-7. GPU merge for HDR+, with improvements planned
-8. Filters for pictures with strength sliders
-9. Night Mode
-10. Metering Modes, Autofocus Areas, Peaking, Zebra pattern, Histogram (for pro modes)
+3. AI denoise
+4. Option to turn on level and grids
+5. HDR+ based on Google's public documentation
+6. Custom bitrates for video modes
+7. Easy diagnostics export for debugging and support
+8. GPU merge for HDR+, with improvements planned
+9. Filters for pictures with strength sliders
+10. Night Mode
+11. Metering Modes, Autofocus Areas, Peaking, Zebra pattern, Histogram (for pro modes)
 
 
 ## Install
